@@ -1,0 +1,76 @@
+.container {
+  min-width: 40rem;
+  max-height: 25rem;
+  background-color: #ffeafd;
+}
+.container__header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1rem;
+}
+.container__header__picker {
+  width: 20px;
+  border: 0;
+}
+.container__header__title {
+  font-size: 1.125rem;
+  flex: 1;
+  text-decoration: underline wavy green;
+}
+.container__table {
+  font-size: 1rem;
+  width: 100%;
+}
+.container__table tr td {
+  text-align: center;
+}
+.container__table__action__edit,
+.container__table__action__delete,
+.container__add__done,
+.container__add__cancel,
+.container__add__add,
+.container__add__clearall {
+  border-radius: 50%;
+  font-size: 1.5rem;
+  border: 0;
+  padding: 0;
+  background-color: #2c2929;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 0.25rem;
+}
+.container__table__action__delete {
+  background-color: #de1220;
+}
+.container__add form {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 0.5rem;
+  margin: 1rem;
+  display: none;
+}
+.container__addinit {
+  margin: 1rem;
+  text-align: right;
+}
+.container__add input {
+  border: 0;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 0.125rem;
+}
+.container__add__done {
+  background-color: green;
+}
+.container__add__cancel {
+  background-color: #de1220;
+}
+.container__add__form__actions {
+  text-align: right;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      rel="preload"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Password Portal</title>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <section class="container">
+      <div class="container__header">
+        <h1 class="container__header__title">Password Portal</h1>
+        <input
+          type="color"
+          value="#ffeafd"
+          id="color"
+          class="container__header__picker"
+          title="change background color"
+        />
+      </div>
+      <main>
+        <aside>
+          <div class="container__add">
+            <form id="add" class="container__add__form">
+              <input id="url" placeholder="Url" />
+              <input id="username" placeholder="Username" />
+              <div class="container__add__form__actions">
+                <button class="container__add__done" type="submit">
+                  <span class="material-icons"> done </span>
+                </button>
+                <button type="reset" class="container__add__cancel">
+                  <span class="material-icons"> close </span>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div id="addinit" class="container__addinit">
+            <button class="container__add__add">
+              <span class="material-icons"> add </span>
+            </button>
+            <button class="container__add__clearall" title="clear all">
+              <span class="material-icons"> delete_sweep </span>
+            </button>
+          </div>
+        </aside>
+        <table class="container__table">
+          <thead>
+            <tr>
+              <th>Site URL</th>
+              <th>Username</th>
+              <th>Secret</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody class="container__table__body"></tbody>
+        </table>
+      </main>
+    </section>
+  </body>
+</html>
